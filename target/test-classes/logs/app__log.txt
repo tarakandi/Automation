@@ -1,0 +1,2 @@
+INFO    2020-12-01 20:42:14,698 [main] Run.logges  - Our first Log
+INFO    2020-12-01 20:42:14,702 [main] Run.logges  - Omar
