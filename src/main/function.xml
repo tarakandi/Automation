@@ -5,7 +5,7 @@
 <listeners>
 <listener class-name="Run.TestListener"/>
 </listeners>
-<test name="Adhoc">
+<test name="Chrome">
 <parameter name="browser" value="Chrome"></parameter>
 <parameter name="URL" value="https://facebook.com"></parameter>
 <groups>
@@ -22,7 +22,7 @@
 
 <!-- Running Different Test-->
 
-<test name="Regression">
+<test name="FireFox">
 <parameter name="browser" value="FireFox"></parameter>
 <parameter name="URL" value="https://facebook.com"></parameter>
 <classes>
