@@ -15,7 +15,7 @@ import Pages.Facebook.SignUpPage;
 
 public class Login extends Usability {
 	
- @Test(priority = 2, groups = {"Adhoc"})
+ @Test(dependsOnMethods = {"loadDriver"}, priority = 2, groups = {"Adhoc"})
   public void login() throws InterruptedException, IOException {
 	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	  LoginPage lp = new LoginPage(driver);
@@ -27,7 +27,7 @@ public class Login extends Usability {
 	  Thread.sleep(3000);
   }
   
-  @Test(priority = 1, groups = {"Adhoc", "Regression"})
+  @Test(dependsOnMethods = {"loadDriver"}, priority = 1, groups = {"Adhoc", "Regression"})
   public void signup() throws InterruptedException
   {
 	 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

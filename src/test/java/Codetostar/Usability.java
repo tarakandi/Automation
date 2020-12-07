@@ -23,7 +23,7 @@ public class Usability {
 	static String dir = System.getProperty("user.dir");
   
   @Parameters({"browser", "URL"})
-  @BeforeClass(groups = {"Adhoc", "Regression"})
+  @BeforeClass
 	public void loadDriver(String BrowserName, String URL)
 	{
 	  if (BrowserName.equalsIgnoreCase("FireFox")) {
