@@ -11,7 +11,7 @@
 <groups>
 <run>
 <!--  include name ="Smoke"></include-->
-<include name ="Adhoc"></include>
+<include name ="Regression"></include>
 </run>
 </groups>
 
@@ -20,7 +20,7 @@
 </classes>
 </test>
 
-<!-- Running Different Test-->
+<!-- Running Different Test
 
 <test name="FireFox">
 <parameter name="browser" value="FireFox"></parameter>
@@ -29,6 +29,6 @@
 <class name="Run.Login"></class>
 </classes>
 </test>
-
+-->
 
 </suite>

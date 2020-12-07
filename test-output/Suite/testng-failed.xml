@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Adhoc(failed)">
+  <listeners>
+    <listener class-name="Run.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="Chrome(failed)">
     <parameter name="browser" value="Chrome"/>
     <parameter name="URL" value="https://facebook.com"/>
     <groups>
       <run>
         <include name="Regression"/>
-        <include name="Adhoc"/>
       </run>
     </groups>
     <classes>
       <class name="Run.Login">
         <methods>
-          <include name="signup2"/>
-          <include name="quitDriver"/>
-          <include name="loadDriver"/>
+          <include name="signup"/>
         </methods>
       </class> <!-- Run.Login -->
     </classes>
-  </test> <!-- Adhoc(failed) -->
+  </test> <!-- Chrome(failed) -->
 </suite> <!-- Failed suite [Suite] -->

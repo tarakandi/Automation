@@ -27,7 +27,7 @@ public class Login extends Usability {
 	  Thread.sleep(3000);
   }
   
-  @Test(dependsOnMethods = {"loadDriver"}, priority = 1, groups = {"Adhoc", "Regression"})
+  @Test(priority = 1, groups = {"Adhoc", "Regression"})
   public void signup() throws InterruptedException
   {
 	 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
